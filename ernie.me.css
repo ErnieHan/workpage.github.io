@@ -1,0 +1,254 @@
+@font-face {
+    font-family: EightBit;
+    src: url(font/8bitOperator.ttf);
+    }
+@keyframes typing{
+    from{
+        width: 0;
+        
+    }
+    to{
+        width: 28ch;
+    
+    }
+}
+@keyframes caret{
+    50%{
+        border-color:transparent;
+    }
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body{
+    background: #3C5672;
+    font-family: 'Noto Sans TC';
+}
+h1,h2,h3,h4,h5{
+    margin: 0;
+}
+.fixed_bg{
+    background: url(img/background01.png) no-repeat center center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-size:cover;
+    z-index: -1;
+  }
+  .web_container{
+      max-width: 1200px;
+      height: auto;
+      margin: 0 auto;
+      /* background-color:#000; */
+      position: relative;
+  }
+  .herosection_top{
+      max-width: 450px;
+      height: auto;
+      /* background: #fff; */
+      margin: 0 auto;
+      position: relative;
+      top:100px;
+      text-align: center;
+  }
+  .photo_top{
+    width: 260px;
+    height: 260px;
+    margin: 0 auto;
+    background-color: #FFC75E;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .photo_top img{
+      width: 250px;
+      height: 250px;
+  }
+  .herosection_top h1{
+      font-family: EightBit;
+      font-weight: bold;
+      font-size: 50px;
+      letter-spacing: 4.7px;
+      color: #ffc75e;
+      margin-bottom: 15px;
+  }
+  .herosection_top h3{
+    font-family: EightBit;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 1.7px;
+    color: #ffc75e;
+  }
+  .herosection_top h2{
+    font-family: EightBit;
+    font-weight: bold;
+    font-size: 28px;
+    color: #ffc75e;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .typing_h2{
+      border-right:3px solid #ffc75e;
+      width: 28ch;
+      margin: 0 auto;
+      animation: typing 3s steps(28),
+                caret 1s steps(1) infinite;
+  }
+  .site{
+      margin: 5px;
+      cursor: pointer;
+  }
+  .site:hover{
+      filter:brightness(.2);
+  }
+  .blog{
+      max-width: 1200px;
+      height: auto;
+      padding: 0px 10px;
+      /* background: #000; */
+      position: relative;
+      top:100px;
+  }
+
+.blog_01{
+    max-width: 1000px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 15px;
+    background: #394955 ;
+    /* background: #394955 url(img/container_bg.png) repeat center; */
+    background-size:15px;
+    border: solid 3px #ffc75e;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 0 0 #e88936;
+}
+.blog_title{
+    width:250px;
+    height: 47px;
+    border-radius: 8px 20px 8px 20px;
+    background-color: #40aca3;
+    border: solid 3px #ffc75e;
+    transform: skewX(-30deg);
+    position: absolute;
+    top:-24px;
+    left:20px;
+    text-align: center;
+    box-shadow: 5px 5px 0 0 #e88936;
+}
+.title_h1{
+    transform: skewX(30deg);
+    font-family: EightBit;
+    font-size: 28px;
+    /* font-weight: bold; */
+    line-height: 43px;
+    color: #ffffff;
+}
+.blog_content{
+    width: 960px;
+    height: auto ;
+    margin: 20px auto;
+    /* background: #000; */
+}
+.blog_content h2{
+    font-family: EightBit;
+    font-size:24px;
+    padding: 10px 50px;
+    color:#fff;
+    text-align: end;
+}
+.blog_main{
+    max-width: 920px;
+    height: auto;
+    /* background: #ccc; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.blog_main_left{
+    width: 360px;
+    height: 270px;
+    /* background: #40aca3; */
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    
+}
+.blog_photo{
+    transition: all .5s;
+}
+.blog_main_left:hover .blog_photo{
+    transform: scale(1.2);
+}
+.blog_main_right{
+    width: 480px;
+    /*RWD在修改這裡的寬度*/
+    height: 270px;
+    /* background: #40aca3; */
+    margin: 10px;
+    position: relative;
+}
+.blog_main_right h1{
+    font-size:28px;
+    color:#fff;
+    font-weight: bold;
+    padding: 10px;
+}
+.blog_main_right p{
+    color:#fff;
+    font-weight: normal;
+    font-size: 14px;
+    padding:10px 10px;
+    line-height: 24px;
+    text-align: justify;
+}
+.read_btn{
+    margin: 10px;
+    width: 120px;
+    height: 42px;
+    border-radius: 50px;
+    background-color: #e6355a;
+    box-shadow: 0 5px 0 0 #9b1a35;
+    position: absolute;
+    right:0;
+    bottom:0;
+    cursor: pointer;
+}
+.read_btn:hover{
+    box-shadow: 0 2px 0 0 #9b1a35;
+    transform: translateY(3px);
+}
+.read_btn p{
+    text-align: center;
+    font-size:24px;
+    font-family: EightBit;
+    color:#FFC75E;
+}
+.demo_btn{
+    margin: 10px;
+    width: 120px;
+    height: 42px;
+    border-radius: 50px;
+    background-color: #40aca3;
+    box-shadow: 0 5px 0 0 #167870;
+    position: absolute;
+    right:140px;
+    bottom:0;
+    cursor: pointer;
+}
+.demo_btn:hover{
+    box-shadow: 0 2px 0 0 #167870;
+    transform: translateY(3px);
+}
+.demo_btn p{
+    text-align: center;
+    font-size:24px;
+    font-family: EightBit;
+    color:#FFC75E;
+}

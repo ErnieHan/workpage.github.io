@@ -1,0 +1,217 @@
+@font-face {
+    font-family: EightBit;
+    src: url(font/8bitOperator.ttf);
+    }
+@keyframes typing{
+    from{
+        width: 0;
+        
+    }
+    to{
+        width: 26ch;
+    
+    }
+}
+@keyframes caret{
+    50%{
+        border-color:transparent;
+    }
+}
+body{
+    background: #3C5672;
+}
+h1,h2,h3,h4,h5{
+    margin: 0;
+}
+.fixed_bg{
+    background: url(img/background01.png) no-repeat center center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-size:cover;
+    z-index: -1;
+  }
+  .web_container{
+      max-width: 1200px;
+      height: auto;
+      margin: 0 auto;
+      /* background-color:#000; */
+      position: relative;
+  }
+  .herosection_top{
+      max-width: 450px;
+      height: auto;
+      /* background: #fff; */
+      margin: 0 auto;
+      position: relative;
+      top:100px;
+      text-align: center;
+  }
+  .photo_top{
+    width: 260px;
+    height: 260px;
+    margin: 0 auto;
+    background-color: #FFC75E;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .photo_top img{
+      width: 250px;
+      height: 250px;
+  }
+  .herosection_top h1{
+      font-family: EightBit;
+      font-weight: bold;
+      font-size: 50px;
+      letter-spacing: 4.7px;
+      color: #ffc75e;
+      margin-bottom: 15px;
+  }
+  .herosection_top h3{
+    font-family: EightBit;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 1.7px;
+    color: #ffc75e;
+  }
+  .herosection_top h2{
+    font-family: EightBit;
+    font-weight: bold;
+    font-size: 28px;
+    color: #ffc75e;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .typing_h2{
+      border-right:3px solid #ffc75e;
+      width: 26ch;
+      margin: 0 auto;
+      animation: typing 3s steps(28),
+                caret 1s steps(1) infinite;
+  }
+  .site{
+      margin: 5px;
+      cursor: pointer;
+  }
+  .site:hover{
+      filter:brightness(.2);
+  }
+  .blog{
+      max-width: 1200px;
+      height: auto;
+      padding: 0px 10px;
+      /* background: #000; */
+      position: relative;
+      top:100px;
+  }
+
+.blog_01{
+    max-width: 1000px;
+    height: 5000px;
+    margin: 80px auto;
+    border-radius: 15px;
+    background: #394955 ;
+    /* background: #394955 url(img/container_bg.png) repeat center; */
+    background-size:15px;
+    border: solid 3px #ffc75e;
+    position: relative;
+}
+
+
+
+.read_btn{
+    margin: 10px;
+    width: 159px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: #e6355a;
+    box-shadow: 0 5px 0 0 #9b1a35;
+    position: absolute;
+    right:0;
+    bottom:0;
+    cursor: pointer;
+}
+.read_btn:hover{
+    box-shadow: 0 2px 0 0 #9b1a35;
+    transform: translateY(3px);
+}
+.read_btn p{
+    text-align: center;
+    font-size:28px;
+    font-family: EightBit;
+    color:#FFC75E;
+}
+.demo_btn{
+    margin: 10px;
+    width: 159px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: #40aca3;
+    box-shadow: 0 5px 0 0 #167870;
+    position: absolute;
+    right:180px;
+    bottom:0;
+    cursor: pointer;
+}
+.demo_btn:hover{
+    box-shadow: 0 2px 0 0 #167870;
+    transform: translateY(3px);
+}
+.demo_btn p{
+    text-align: center;
+    font-size:28px;
+    font-family: EightBit;
+    color:#FFC75E;
+}
+
+/* Pro-01*/
+.sub_title{
+    max-width: 800px;
+    height: 50px;
+    /* background: #000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto 0 auto;
+}
+.sub_title h2{
+    font-size:24px;
+    font-family: EightBit;
+    font-weight: bold;
+    color:#fff;
+    letter-spacing: 2.6px;
+    padding: 0 10px;
+}
+.pro_title{
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    /* background: #fff; */
+    display: flex;
+    align-items: center;
+}
+.pro_title h1{
+    font-size: 28px;
+    font-weight: 400;
+    color:#fff;
+    padding:0 10px;
+}
+.or_line{
+    max-width: 800px;
+    height: 3px;
+    background: #FFC75E;
+    margin: 30px auto;
+}
+.pro_hero_img{
+    margin: 0 auto;
+    max-width: 800px;
+    height: 400px;
+    overflow: hidden;
+    background: url(img/pro_img01.png)no-repeat center center;
+    background-size:cover;
+    padding:0 10px;
+}
